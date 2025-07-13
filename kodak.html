@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>广西永顺环保科技有限公司 - 以科技洁净未来</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0F766E', // 环保绿
+                        secondary: '#0284C7', // 科技蓝
+                        accent: '#06B6D4',
+                        neutral: '#1E293B',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .card-hover {
+                transition: all 0.3s ease;
+            }
+            .card-hover:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans text-neutral">
+    <!-- 顶部导航 -->
+    <header class="sticky top-0 z-50 bg-white shadow-md transition-all duration-300">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-2">
+                    <i class="fa fa-leaf text-primary text-2xl"></i>
+                    <span class="text-xl font-bold text-primary">广西永顺环保科技</span>
+                </div>
+                
+                <!-- 桌面导航 -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-primary transition-colors">首页</a>
+                    <a href="#about" class="text-gray-700 hover:text-primary transition-colors">公司简介</a>
+                    <a href="#technology" class="text-gray-700 hover:text-primary transition-colors">核心技术</a>
+                    <a href="#business" class="text-gray-700 hover:text-primary transition-colors">业务板块</a>
+                    <a href="#cases" class="text-gray-700 hover:text-primary transition-colors">合作案例</a>
+                    <a href="#contact" class="text-gray-700 hover:text-primary transition-colors">联系我们</a>
+                </nav>
+                
+                <!-- 移动端菜单按钮 -->
+                <button id="menuBtn" class="md:hidden text-gray-700 focus:outline-none">
+                    <i class="fa fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- 移动端导航菜单 -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+            <div class="container mx-auto px-4 py-3 flex flex-col space-y-3">
+                <a href="#home" class="text-gray-700 hover:text-primary py-2 transition-colors">首页</a>
+                <a href="#about" class="text-gray-700 hover:text-primary py-2 transition-colors">公司简介</a>
+                <a href="#technology" class="text-gray-700 hover:text-primary py-2 transition-colors">核心技术</a>
+                <a href="#business" class="text-gray-700 hover:text-primary py-2 transition-colors">业务板块</a>
+                <a href="#cases" class="text-gray-700 hover:text-primary py-2 transition-colors">合作案例</a>
+                <a href="#contact" class="text-gray-700 hover:text-primary py-2 transition-colors">联系我们</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 英雄区域 -->
+    <section id="home" class="relative bg-gradient-to-r from-primary to-secondary text-white">
+        <div class="absolute inset-0 bg-black opacity-20"></div>
+        <div class="container mx-auto px-4 py-20 md:py-32 relative z-10">
+            <div class="max-w-3xl">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-shadow">以科技洁净未来</h1>
+                <p class="text-xl md:text-2xl mb-8">专业从事生活垃圾焚烧发电厂炉渣的深加工处理及综合利用</p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#about" class="bg-white text-primary px-6 py-3 rounded-md font-medium hover:bg-opacity-90 transition-colors">了解更多</a>
+                    <a href="#contact" class="bg-transparent border-2 border-white px-6 py-3 rounded-md font-medium hover:bg-white hover:bg-opacity-10 transition-colors">联系我们</a>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-gray-50 to-transparent"></div>
+    </section>
+
+    <!-- 核心价值 -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-neutral mb-4">企业核心价值</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">诚信为本 | 求实创新 | 服务至上 | 合作共赢</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-gray-50 p-8 rounded-lg shadow-sm card-hover">
+                    <div class="w-14 h-14 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-handshake-o text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">诚信为本</h3>
+                    <p class="text-gray-600">坚守诚信原则，赢得客户与合作伙伴的信赖与尊重</p>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-lg shadow-sm card-hover">
+                    <div class="w-14 h-14 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-lightbulb-o text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">求实创新</h3>
+                    <p class="text-gray-600">立足实际，不断创新技术与服务，提升核心竞争力</p>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-lg shadow-sm card-hover">
+                    <div class="w-14 h-14 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-users text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">服务至上</h3>
+                    <p class="text-gray-600">以客户需求为导向，提供专业高效的全方位服务</p>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-lg shadow-sm card-hover">
+                    <div class="w-14 h-14 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-line-chart text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">合作共赢</h3>
+                    <p class="text-gray-600">与合作伙伴携手共进，实现可持续发展与多方共赢</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 公司简介 -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                <!-- 左侧栏：公司概述 -->
+                <div class="lg:col-span-1">
+                    <h2 class="text-3xl font-bold text-neutral mb-6">公司简介</h2>
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <img src="https://picsum.photos/id/119/600/400" alt="公司环境" class="w-full h-64 object-cover rounded-md mb-6">
+                        <p class="mb-4">广西永顺环保科技有限公司成立于2023年12月26日，注册资金2000万元，是一家从事可再生资源技术开发和炉渣分选设备应用的公司。</p>
+                        <p class="mb-4">公司主要致力于生活垃圾焚烧发电厂的炉渣的深加工处理及综合利用，已发展成为国内规模较大的炉渣加工处理企业。</p>
+                        <div class="mt-6">
+                            <h3 class="font-semibold text-lg mb-3">企业精神</h3>
+                            <ul class="space-y-2">
+                                <li class="flex items-center"><i class="fa fa-check text-primary mr-2"></i> 和谐共事 · 团结干事</li>
+                                <li class="flex items-center"><i class="fa fa-check text-primary mr-2"></i> 善于分享 · 保持诚意</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 中间栏：荣誉资质 -->
+                <div class="lg:col-span-1">
+                    <h2 class="text-3xl font-bold text-neutral mb-6">荣誉资质</h2>
+                    <div class="bg-white p-6 rounded-lg shadow-sm h-full">
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <div class="bg-gray-50 p-4 rounded text-center">
+                                <i class="fa fa-certificate text-3xl text-yellow-500 mb-2"></i>
+                                <p>AAA级信用企业</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded text-center">
+                                <i class="fa fa-trophy text-3xl text-primary mb-2"></i>
+                                <p>全国环保科技行业金奖</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded text-center">
+                                <i class="fa fa-shield text-3xl text-secondary mb-2"></i>
+                                <p>AAA级重合同守信用企业</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded text-center">
+                                <i class="fa fa-leaf text-3xl text-green-500 mb-2"></i>
+                                <p>中国绿色环保企业</p>
+                            </div>
+                        </div>
+                        
+                        <h3 class="font-semibold text-lg mb-3">企业价值观</h3>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center"><i class="fa fa-star text-primary mr-2"></i> 爱岗敬业</li>
+                            <li class="flex items-center"><i class="fa fa-star text-primary mr-2"></i> 以厂为家</li>
+                            <li class="flex items-center"><i class="fa fa-star text-primary mr-2"></i> 以人为本</li>
+                        </ul>
+                        
+                        <div class="border-t pt-4">
+                            <h3 class="font-semibold text-lg mb-3">管理体系认证</h3>
+                            <ul class="space-y-2">
+                                <li class="flex items-center"><i class="fa fa-check-circle text-primary mr-2"></i> 质量管理体系认证</li>
+                                <li class="flex items-center"><i class="fa fa-check-circle text-primary mr-2"></i> 环境管理体系认证</li>
+                                <li class="flex items-center"><i class="fa fa-check-circle text-primary mr-2"></i> 职业健康安全管理体系认证</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 右侧栏：运营体系 -->
+                <div class="lg:col-span-1">
+                    <h2 class="text-3xl font-bold text-neutral mb-6">运营体系</h2>
+                    <div class="bg-white p-6 rounded-lg shadow-sm h-full">
+                        <h3 class="font-semibold text-lg mb-4">全产业链一体化运营</h3>
+                        <p class="mb-6">公司深耕炉渣行业九载，已发展成为行业内顶尖的集炉渣厂设计、建设、设备、安装、管理运营于一身的完整闭环运作体系优质供应商。</p>
+                        
+                        <div class="space-y-4 mb-6">
+                            <div class="flex items-start">
+                                <div class="bg-primary text-white p-2 rounded-full mr-4 mt-1">
+                                    <i class="fa fa-pencil"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">成熟的设计方案</h4>
+                                    <p class="text-gray-600 text-sm">领先行业的设计理念，提供高性价比的一站式解决方案</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-primary text-white p-2 rounded-full mr-4 mt-1">
+                                    <i class="fa fa-building"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">自有的建筑团队</h4>
+                                    <p class="text-gray-600 text-sm">规模超百人的自有队伍，真正懂得行业的专业化建设团队</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-primary text-white p-2 rounded-full mr-4 mt-1">
+                                    <i class="fa fa-cogs"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">高质量的设备自供应</h4>
+                                    <p class="text-gray-600 text-sm">设备供货项目近百个，市场占有率领先，品质精良</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-primary text-white p-2 rounded-full mr-4 mt-1">
+                                    <i class="fa fa-wrench"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">专业的安装团队</h4>
+                                    <p class="text-gray-600 text-sm">由公司设备厂专业技工组成，服务项目遍布全国</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-primary text-white p-2 rounded-full mr-4 mt-1">
+                                    <i class="fa fa-users"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">经验丰富的管理团队</h4>
+                                    <p class="text-gray-600 text-sm">近200名员工的运营管理团队，凝聚九载生产运营经验</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-4 rounded-md">
+                            <p class="text-center italic text-gray-700">使所运作的项目快速落地、运营平稳、成本可控、投资回报周期合理</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 核心技术 -->
+    <section id="technology" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-neutral mb-4">核心技术</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">公司拥有技术过硬的专业团队，成功攻克了将垃圾发电厂的废渣充分再利用的多个技术难题</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- 技术一 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-sm card-hover">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://picsum.photos/id/28/800/500" alt="炉渣金属资源化利用技术" class="w-full h-full object-cover transition-transform hover:scale-105 duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-primary">炉渣金属资源化利用技术</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-primary mt-1 mr-3"></i>
+                                <span>采用三级磁浮两级回收专利技术</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-primary mt-1 mr-3"></i>
+                                <span>无废气排放，首创密闭注水破碎工艺</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-primary mt-1 mr-3"></i>
+                                <span>金属回收率达98%以上</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- 技术二 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-sm card-hover">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://picsum.photos/id/137/800/500" alt="水循环综合利用技术" class="w-full h-full object-cover transition-transform hover:scale-105 duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-primary">水循环综合利用技术</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-primary mt-1 mr-3"></i>
+                                <span>采用封闭式循环回用技术</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-primary mt-1 mr-3"></i>
+                                <span>采用全自动化设备生产线</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-primary mt-1 mr-3"></i>
+                                <span>实现废水零排放</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- 技术三 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-sm card-hover">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://picsum.photos/id/177/800/500" alt="炉渣制砖资源化利用技术" class="w-full h-full object-cover transition-transform hover:scale-105 duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-primary">炉渣制砖(沙)资源化利用技术</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-primary mt-1 mr-3"></i>
+                                <span>采用全自动化流水线式制砖生产设备</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-primary mt-1 mr-3"></i>
+                                <span>不用黏土和煤渣作为原燃料</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-primary mt-1 mr-3"></i>
+                                <span>采用与上海建科院联合制定的专利技术</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 设备展示 -->
+            <div class="mt-16">
+                <h3 class="text-2xl font-bold text-center mb-8">炉渣分选设备</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-gray-50 p-5 rounded-lg shadow-sm">
+                        <h4 class="font-semibold mb-2">反击式破碎机</h4>
+                        <p class="text-gray-600 text-sm mb-3">将输送来的炉渣破碎，精细化破碎炉渣使更细更易回收金属</p>
+                        <div class="text-xs text-gray-500">
+                            <p><span class="font-medium">突出优势：</span>结构特别，综合效益高，产品粒型好</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-5 rounded-lg shadow-sm">
+                        <h4 class="font-semibold mb-2">跃进振动筛</h4>
+                        <p class="text-gray-600 text-sm mb-3">能够将给料出口来的砂料等向前推进、以一定的频率振动输送</p>
+                        <div class="text-xs text-gray-500">
+                            <p><span class="font-medium">规格：</span>2.4米×6米</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-5 rounded-lg shadow-sm">
+                        <h4 class="font-semibold mb-2">捞砂机</h4>
+                        <p class="text-gray-600 text-sm mb-3">用于清洗砂料的设备，能够洗去砂料中夹杂的粉尘杂质等异物</p>
+                        <div class="text-xs text-gray-500">
+                            <p><span class="font-medium">规格：</span>4米</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-5 rounded-lg shadow-sm">
+                        <h4 class="font-semibold mb-2">分级滚筒筛</h4>
+                        <p class="text-gray-600 text-sm mb-3">固定孔大小的滚筒，确保出来的成品砂符合下步加工要求</p>
+                        <div class="text-xs text-gray-500">
+                            <p><span class="font-medium">规格：</span>1.5米×3.0米</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-5 rounded-lg shadow-sm">
+                        <h4 class="font-semibold mb-2">单螺旋分级机</h4>
+                        <p class="text-gray-600 text-sm mb-3">借助固体颗粒的比重不同，在液体中沉淀的速度不同的原理进行机械分级</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-5 rounded-lg shadow-sm">
+                        <h4 class="font-semibold mb-2">双螺旋分级机</h4>
+                        <p class="text-gray-600 text-sm mb-3">能把磨机内磨出的料粉级于过滤，分离粗料和细料并分别排出</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 业务板块 -->
+    <section id="business" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-neutral mb-4">业务板块</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">提供从设计到运营的全产业链服务，为客户创造最大价值</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-sm card-hover">
+                    <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-pencil text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">设计业务</h3>
+                    <p class="text-gray-600 mb-4">公司主导参与炉渣厂设计的项目近20余个，为各个项目提供高品质、兼顾性价比的一站式方案。</p>
+                    <p class="text-gray-600">设计理念不断创新优化，在炉渣行业中处于领先地位，已投运的项目运转稳定、生产线回收高效。</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-sm card-hover">
+                    <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-building text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">建设业务</h3>
+                    <p class="text-gray-600 mb-4">拥有专业建筑工程施工团队，管理人员配备齐全，拥有丰富的炉渣厂建设经验。</p>
+                    <p class="text-gray-600">使施工方案不断优化，交叉作业高效，率先形成同业高质量产业闭环，使炉渣厂专属设计方案落实得以保障。</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-sm card-hover">
+                    <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-cogs text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">设备业务</h3>
+                    <p class="text-gray-600 mb-4">公司拥有自己的炉渣设备制造厂，设备供货项目近百个，市场占有率领先，品质精良，质量过硬。</p>
+                    <p class="text-gray-600">凭借优质的设备产品，获得行业内的交口称誉，为炉渣处理项目提供可靠的硬件支持。</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-sm card-hover">
+                    <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-wrench text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">安装业务</h3>
+                    <p class="text-gray-600 mb-4">拥有可靠专业的设备安装团队，由公司设备厂专业技工组成，秉承对设计方案、设备配置的高度理解。</p>
+                    <p class="text-gray-600">服务项目遍布全国，安装团队始终恪守工匠精神，攻坚克难、雷厉风行的团队品质铸就了众多精品项目。</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-sm card-hover">
+                    <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-cog text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">管理业务</h3>
+                    <p class="text-gray-600 mb-4">拥有近200名员工的运营管理团队，运营管理体系成熟健全，充分整合上下游渠道资源。</p>
+                    <p class="text-gray-600">凝聚十余载生产运营经验，践行现代化管理和稳健型运营，项目快速高效建设及平稳运营生产得以保证。</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-sm card-hover">
+                    <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-recycle text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">资源化利用</h3>
+                    <p class="text-gray-600 mb-4">领先行业的技术标准4.0生产工艺，对炉渣中贵金属进行高效分选回收后，将尾砂制作成便道砖。</p>
+                    <p class="text-gray-600">达到充分资源化利用，实现垃圾变废为宝的循环经济模式，为环境保护做出积极贡献。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 合作案例 -->
+    <section id="cases" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-neutral mb-4">合作案例</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">公司与多家知名企业建立了长期稳定的合作关系，项目遍布全国多个地区</p>
+            </div>
+            
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white border border-gray-200">
+                    <thead>
+                        <tr class="bg-gray-100">
+                            <th class="py-3 px-4 border-b text-left">项目名称</th>
+                            <th class="py-3 px-4 border-b text-left">发电厂单位名称</th>
+                            <th class="py-3 px-4 border-b text-left">电厂垃圾焚烧量(吨/天)</th>
+                            <th class="py-3 px-4 border-b text-left">炉渣厂日处理规模(吨)</th>
+                            <th class="py-3 px-4 border-b text-left">电厂炉渣量(吨/天)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 border-b">贵州铜仁</td>
+                            <td class="py-3 px-4 border-b">铜仁海创环境工程有限公司</td>
+                            <td class="py-3 px-4 border-b">600</td>
+                            <td class="py-3 px-4 border-b">600</td>
+                            <td class="py-3 px-4 border-b">235</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 border-b">贵州福泉</td>
+                            <td class="py-3 px-4 border-b">福泉海创环保科技有限责任公司</td>
+                            <td class="py-3 px-4 border-b">600</td>
+                            <td class="py-3 px-4 border-b">600</td>
+                            <td class="py-3 px-4 border-b">225</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 border-b">江西弋阳</td>
+                            <td class="py-3 px-4 border-b">弋阳海创环保科技有限责任公司</td>
+                            <td class="py-3 px-4 border-b">600</td>
+                            <td class="py-3 px-4 border-b">600</td>
+                            <td class="py-3 px-4 border-b">220</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 border-b">石家庄赵县</td>
+                            <td class="py-3 px-4 border-b">卡万塔能源(中国)投资有限公司</td>
+                            <td class="py-3 px-4 border-b">1800</td>
+                            <td class="py-3 px-4 border-b">1800</td>
+                            <td class="py-3 px-4 border-b">540</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 border-b">湖南澧县</td>
+                            <td class="py-3 px-4 border-b">澧县海创环保科技有限责任公司</td>
+                            <td class="py-3 px-4 border-b">1200</td>
+                            <td class="py-3 px-4 border-b">1200</td>
+                            <td class="py-3 px-4 border-b">360</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 border-b">广西北海</td>
+                            <td class="py-3 px-4 border-b">北海北控环境科技发展有限公司</td>
+                            <td class="py-3 px-4 border-b">1400</td>
+                            <td class="py-3 px-4 border-b">1400</td>
+                            <td class="py-3 px-4 border-b">420</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- 重点项目展示 -->
+            <div class="mt-16">
+                <h3 class="text-2xl font-bold text-center mb-8">重点项目巡礼</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-sm card-hover">
+                        <img src="https://picsum.photos/id/301/600/400" alt="河北石家庄赵县项目" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h4 class="text-lg font-semibold mb-2">河北石家庄赵县项目</h4>
+                            <p class="text-gray-600 text-sm mb-4">总投资3000万元，项目占地16618.91平方米，建筑面积9825平方米</p>
+                            <div class="space-y-1 text-sm text-gray-600">
+                                <p><span class="font-medium">项目产值：</span>年分选22万吨炉渣、年生产1亿块便道砖</p>
+                                <p><span class="font-medium">主要设施：</span>一条年分选22万吨炉渣生产线、一条便道砖资源再生项目生产线</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-sm card-hover">
+                        <img src="https://picsum.photos/id/302/600/400" alt="贵州福泉项目" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h4 class="text-lg font-semibold mb-2">贵州福泉项目</h4>
+                            <p class="text-gray-600 text-sm mb-4">总投资2000万元，占地11000平方米，总建筑面积10500平方米</p>
+                            <div class="space-y-1 text-sm text-gray-600">
+                                <p><span class="font-medium">项目产值：</span>年综合处置22万吨炉渣，年生产8000万块便道砖</p>
+                                <p><span class="font-medium">主要设施：</span>一条炉渣分选线，2层办公楼、厂房、门卫房及其附属设施</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-sm card-hover">
+                        <img src="https://picsum.photos/id/303/600/400" alt="广西北流设备厂" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h4 class="text-lg font-semibold mb-2">自有设备生产基地 - 广西北流设备厂</h4>
+                            <p class="text-gray-600 text-sm mb-4">总投资6000万元，占地30000平方米，总建筑面积36800平方米</p>
+                            <div class="space-y-1 text-sm text-gray-600">
+                                <p><span class="font-medium">项目产值：</span>年生产500台炉渣分选设备</p>
+                                <p><span class="font-medium">主要设施：</span>两条设备生产线，6层综合楼、厂房、门卫房及其附属设施</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 全国布局 -->
+            <div class="mt-16">
+                <h3 class="text-2xl font-bold text-center mb-8">全国布局</h3>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <div class="h-80 bg-gray-200 rounded-md relative overflow-hidden">
+                        <!-- 这里可以放置实际地图图片 -->
+                        <img src="https://picsum.photos/id/101/1200/600" alt="全国布局地图" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="bg-white bg-opacity-80 px-6 py-4 rounded-lg text-center">
+                                <p class="font-semibold mb-2">业务覆盖全国多个地区</p>
+                                <p class="text-sm text-gray-600">已在贵州、广西、河北、湖南、安徽、江西等多地布局项目</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                        <div class="text-center">
+                            <div class="text-primary font-semibold">贵州铜仁</div>
+                            <div class="text-xs text-gray-500">已投产</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-primary font-semibold">贵州福泉</div>
+                            <div class="text-xs text-gray-500">已投产</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-primary font-semibold">广西北海</div>
+                            <div class="text-xs text-gray-500">建设中</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-primary font-semibold">河北赵县</div>
+                            <div class="text-xs text-gray-500">建设中</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-primary font-semibold">湖南澧县</div>
+                            <div class="text-xs text-gray-500">已投产</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-primary font-semibold">安徽枞阳</div>
+                            <div class="text-xs text-gray-500">已投产</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-primary font-semibold">江西弋阳</div>
+                            <div class="text-xs text-gray-500">已投产</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-primary font-semibold">河北行唐</div>
+                            <div class="text-xs text-gray-500">建设中</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                <div class="lg:col-span-1">
+                    <h2 class="text-3xl font-bold text-neutral mb-6">联系我们</h2>
+                    <div class="bg-white p-6 rounded-lg shadow-sm h-full">
+                        <div class="mb-8">
+                            <h3 class="text-lg font-semibold mb-4">公司信息</h3>
+                            <ul class="space-y-4">
+                                <li class="flex items-start">
+                                    <i class="fa fa-map-marker text-primary mt-1 mr-4"></i>
+                                    <span>地址：广西省北流市</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa fa-calendar text-primary mt-1 mr-4"></i>
+                                    <span>成立时间：2023年12月26日</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa fa-money text-primary mt-1 mr-4"></i>
+                                    <span>注册资金：2000万元</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa fa-phone text-primary mt-1 mr-4"></i>
+                                    <span>电话：0775-XXXXXXX</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa fa-envelope text-primary mt-1 mr-4"></i>
+                                    <span>邮箱：contact@yongshunep.com</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-lg font-semibold mb-4">关注我们</h3>
+                            <div class="flex space-x-4">
+                                <a href="#" class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center hover:bg-opacity-90 transition-colors">
+                                    <i class="fa fa-weixin"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center hover:bg-opacity-90 transition-colors">
+                                    <i class="fa fa-weibo"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center hover:bg-opacity-90 transition-colors">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center hover:bg-opacity-90 transition-colors">
+                                    <i class="fa fa-youtube-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-2">
+                    <h2 class="text-3xl font-bold text-neutral mb-6">留言咨询</h2>
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <form>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                <div>
+                                    <label for="name" class="block text-gray-700 mb-2">姓名</label>
+                                    <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="请输入您的姓名">
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-gray-700 mb-2">电话</label>
+                                    <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="请输入您的联系电话">
+                                </div>
+                                <div>
+                                    <label for="company" class="block text-gray-700 mb-2">公司名称</label>
+                                    <input type="text" id="company" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="请输入您的公司名称">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-gray-700 mb-2">邮箱</label>
+                                    <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="请输入您的邮箱地址">
+                                </div>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="subject" class="block text-gray-700 mb-2">主题</label>
+                                <select id="subject" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                    <option value="">请选择咨询主题</option>
+                                    <option value="cooperation">合作咨询</option>
+                                    <option value="equipment">设备采购</option>
+                                    <option value="technology">技术咨询</option>
+                                    <option value="project">项目合作</option>
+                                    <option value="other">其他问题</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="message" class="block text-gray-700 mb-2">留言内容</label>
+                                <textarea id="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="请输入您的留言内容"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="bg-primary text-white px-6 py-3 rounded-md font-medium hover:bg-opacity-90 transition-colors">提交留言</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-neutral text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fa fa-leaf text-primary text-2xl"></i>
+                        <span class="text-xl font-bold">广西永顺环保</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">以科技洁净未来，让垃圾变废为宝</p>
+                    <p class="text-gray-400 text-sm">专业从事生活垃圾焚烧发电厂炉渣的深加工处理及综合利用，致力于再生资源技术开发和炉渣分选设备应用。</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">快速链接</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#home" class="hover:text-primary transition-colors">首页</a></li>
+                        <li><a href="#about" class="hover:text-primary transition-colors">公司简介</a></li>
+                        <li><a href="#technology" class="hover:text-primary transition-colors">核心技术</a></li>
+                        <li><a href="#business" class="hover:text-primary transition-colors">业务板块</a></li>
+                        <li><a href="#cases" class="hover:text-primary transition-colors">合作案例</a></li>
+                        <li><a href="#contact" class="hover:text-primary transition-colors">联系我们</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">业务范围</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>炉渣厂设计建设</li>
+                        <li>炉渣分选设备制造</li>
+                        <li>炉渣金属回收利用</li>
+                        <li>炉渣制砖技术应用</li>
+                        <li>环保项目运营管理</li>
+                        <li>再生资源技术开发</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">联系方式</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fa fa-map-marker text-primary mt-1 mr-3"></i>
+                            <span>广西省北流市</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-phone text-primary mt-1 mr-3"></i>
+                            <span>0775-XXXXXXX</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-envelope text-primary mt-1 mr-3"></i>
+                            <span>contact@yongshunep.com</span>
+                        </li>
+                    </ul>
+                    <div class="mt-4 flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors">
+                            <i class="fa fa-weixin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors">
+                            <i class="fa fa-weibo text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors">
+                            <i class="fa fa-linkedin text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400 text-sm">
+                <p>© 2023 广西永顺环保科技有限公司 版权所有 | 桂ICP备XXXXXXXX号</p>
+                <p class="mt-2">诚信为本 | 求实创新 | 服务至上 | 合作共赢</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 移动端菜单切换
+        document.getElementById('menuBtn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // 滚动时导航栏样式变化
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('py-2');
+                header.classList.remove('py-4');
+            } else {
+                header.classList.add('py-4');
+                header.classList.remove('py-2');
+            }
+        });
+        
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                // 关闭移动端菜单
+                document.getElementById('mobileMenu').classList.add('hidden');
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>    
